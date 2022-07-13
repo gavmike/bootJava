@@ -17,7 +17,10 @@ import ru.javaops.bootjava.service.UserDetailService;
 import ru.javaops.bootjava.web.ExapleService;
 import ru.javaops.bootjava.web.UsersJob;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
 
 @SpringBootApplication
 @AllArgsConstructor
@@ -48,7 +51,6 @@ public class RestaurantVotingApplication implements CommandLineRunner  {
 
     @Override
     public void run(String... args)  {
-        new ArrayList<>();
 
         System.out.println(userDetailsRepository.findAll().size());
         System.out.println(addressRepository.findAll().size());
